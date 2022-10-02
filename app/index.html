@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="theme-color" content="#111111">
+		<title>Blank Template</title>
+		<link href="fonts/Nominee-Bold.woff2" as="font" type="font/woff2" >
+		<link href="fonts/Nominee-ExtraBold.woff2" as="font" type="font/woff2">
+		<link href="fonts/Nominee-Medium.woff2" as="font" type="font/woff2">
+		<link href="fonts/PPObjectSans-Heavy.woff2" as="font" type="font/woff2">
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script defer src="js/main.js"></script>
+	</head>
+	<body>
+
+	<header class="header">
+	<div class="grid header_grid">
+		<div class="logo">
+			<img src="img/logo.svg" alt="">
+		</div>
+		<nav class="header_nav nav">
+			<ul class="header_nav-list nav_list">
+				<li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">Показатели</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">Тарифы</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">Возможности</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
+			</ul>
+		</nav>
+		<a href="#" class="burger"><span class="burger-icon"></span></a>
+		<div class="header_contacts">
+			<a href="tel:84956468682" class="header_phone">
+				<svg class="header_phone--icon">
+					<use xlink:href="img/sprite.svg#phone">
+				</svg>
+			+7 495 646-86-82</a>
+		</div>
+	</div>
+</header>
+	<section class="hero">
+	<div class="grid hero_grid">
+		<div class="slider-hero">
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+				<!-- Slides -->
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+	</div>
+</section>
+	<section class="cards cards-grid">
+	<div class="slider-cards">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="card card--border">
+					<div class="card--body">
+						<picture>
+							<source srcset="img/card-mobile-1.webp" type="image/webp" media="(max-width: 768px)">
+							<source srcset="img/card-mobile-1.avif" type="image/avif" media="(max-width: 768px)">
+							<source srcset="img/card-1.webp" type="image/webp" media="(min-width: 768px)">
+							<source srcset="img/card-1.avif" type="image/avif" media="(min-width: 768px)">
+							<img src="img/card-1.png" alt="Card image" class="card--img">
+						</picture>
+						<h3 class="card--title">Ежедневный возврат наложенных платежей</h3>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="card card--border">
+					<div class="card--body">
+						<picture>
+							<source srcset="img/card-mobile-2.webp" type="image/webp" media="(max-width: 768px)">
+							<source srcset="img/card-mobile-2.avif" type="image/avif" media="(max-width: 768px)">
+							<source srcset="img/card-2.webp" type="image/webp" media="(min-width: 768px)">
+							<source srcset="img/card-2.avif" type="image/avif" media="(min-width: 768px)">
+							<img src="img/card-2.png" alt="Card image" class="card--img">
+						</picture>
+						<h3 class="card--title">Доставка по городам ЦФО на следующий день</h3>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="card card--border">
+					<div class="card--body">
+						<picture>
+							<source srcset="img/card-mobile-3.webp" type="image/webp" media="(max-width: 768px)">
+							<source srcset="img/card-mobile-3.avif" type="image/avif" media="(max-width: 768px)">
+							<source srcset="img/card-3.webp" type="image/webp" media="(min-width: 768px)">
+							<source srcset="img/card-3.avif" type="image/avif" media="(min-width: 768px)">
+							<img src="img/card-3.png" alt="Card image" class="card--img">
+						</picture>
+						<h3 class="card--title">Доставка из  оффлайн-магазинов Ship From Store</h3>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="card card--border">
+					<div class="card--body">
+						<picture>
+							<source srcset="img/card-mobile-4.webp" type="image/webp" media="(max-width: 768px)">
+							<source srcset="img/card-mobile-4.avif" type="image/avif" media="(max-width: 768px)">
+							<source srcset="img/card-4.webp" type="image/webp" media="(min-width: 768px)">
+							<source srcset="img/card-4.avif" type="image/avif" media="(min-width: 768px)">
+							<img src="img/card-4.png" alt="Card image" class="card--img">
+						</picture>
+						<h3 class="card--title">Доставка по России через партнёров</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--- 368*164 -->
+
+	</body>
+</html>

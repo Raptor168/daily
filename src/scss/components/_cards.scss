@@ -1,0 +1,179 @@
+// body {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: column;
+// 	height: 100vh;
+// 	// background-color: #000;
+// }
+.swiper-slide {
+	// flex-shrink: 1;
+	height: auto;
+	// margin: 0 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.cards {
+	&-grid {
+		margin: 0 auto;
+		width: 100%;
+
+		@media screen and (min-width: 1000px) {
+			width: 900px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1200px;
+		}
+	}
+}
+
+.card {
+	height: 100%;
+
+	&--border {
+		width: 372px;
+		padding: 2px;
+		border-radius: 32px;
+		overflow: hidden;
+		box-sizing: border-box;
+		background: linear-gradient(180deg, #96D6FF 0%, rgba(255, 255, 255, 0) 100%);
+
+		@media screen and (min-width: 768px) {
+			width: 280px;
+			// height: 100%;
+
+			background: linear-gradient(180deg, #96D6FF 0%, rgba(255, 255, 255, 0) 100%);
+
+		}
+	}
+
+	&--body {
+
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			filter: blur(200px);
+			background-repeat: no-repeat;
+		}
+	}
+
+	picture {
+		order: 2;
+		line-height: 0;
+
+		@media screen and (min-width: 768px) {
+			order: 1;
+			height: auto;
+		}
+	}
+
+	&--img {
+		position: relative;
+		width: 100%;
+		z-index: 15;
+	}
+
+	&--title {
+		margin: 0;
+		font: 900 24px/140% 'ObjectSans', sans-serif;
+		letter-spacing: 0.01em;
+		padding: 24px 20px 0 20px;
+		color: #fff;
+		position: relative;
+		z-index: 15;
+		order: 1;
+
+		@media screen and (min-width: 768px) {
+			padding: 0 32px 32px 32px;
+			font: 900 18px/150% 'ObjectSans', sans-serif;
+			letter-spacing: 0;
+			order: 2;
+		}
+	}
+}
+
+.swiper-slide:nth-child(1)>.card>.card--body {
+	background-image:
+		linear-gradient(143.35deg, rgba(83, 30, 209, 0.2) 0%, rgba(240, 243, 246, 0.2) 100%),
+		linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+	&:before {
+		left: -50px;
+		top: -72px;
+		width: 395px;
+		height: 570px;
+		background-image:
+			linear-gradient(rgba(154, 231, 255, .7) 0%, rgba(154, 231, 255, .7) 100%),
+			linear-gradient(rgba(0, 5, 255, .7) 0%, rgba(0, 5, 255, .7) 100%);
+		background-size: 266px 266px, 376px 376px;
+		background-position: right top, left bottom;
+	}
+}
+
+.swiper-slide:nth-child(2)>.card>.card--body {
+	background-image:
+		linear-gradient(143.35deg, rgba(0, 104, 255, 0.2) 0%, rgba(240, 243, 246, 0.2) 100%),
+		linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+	&:before {
+		left: -50px;
+		top: 0px;
+		width: 380px;
+		height: calc(100% + 178px);
+		background-image:
+			linear-gradient(rgba(91, 30, 233, .04) 0%, rgba(91, 30, 233, .04) 100%),
+			linear-gradient(rgba(193, 240, 255, .8) 0%, rgba(193, 240, 255, .8) 100%),
+			linear-gradient(rgba(0, 56, 255, 1) 0%, rgba(0, 56, 255, 1) 100%);
+		background-size: 266px 266px, 266px 266px, 376px 376px;
+		background-position: 65px 208px, center 20px, center bottom;
+	}
+}
+
+.swiper-slide:nth-child(3)>.card>.card--body {
+	background-image:
+		linear-gradient(143.35deg, rgba(0, 41, 255, 0.2) 0%, rgba(240, 243, 246, 0.2) 100%),
+		linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+	&:before {
+		left: -65px;
+		top: 0px;
+		width: 395px;
+		height: calc(100% + 178px);
+		background-image:
+			linear-gradient(rgba(190, 255, 251, .6) 0%, rgba(190, 255, 251, .6) 100%),
+			linear-gradient(rgba(0, 5, 255, .8) 0%, rgba(0, 5, 255, .8) 100%);
+		background-size: 266px 266px, 376px 376px;
+		background-position: left 27px, center bottom;
+	}
+}
+
+.swiper-slide:nth-child(4)>.card>.card--body {
+	background-image:
+		linear-gradient(143.35deg, rgba(0, 104, 255, 0.2) 0%, rgba(240, 243, 246, 0.2) 100%),
+		linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+	&:before {
+		left: -115px;
+		top: -92px;
+		width: 500px;
+		height: calc(100% + 270px);
+		background-image:
+			radial-gradient(circle at center, rgba(184, 251, 255, .8) 0%, rgba(184, 251, 255, .8) 100%),
+			radial-gradient(circle at center, rgba(91, 30, 233, .12) 0%, rgba(91, 30, 233, .12) 100%),
+			radial-gradient(circle at center, rgba(0, 71, 255, .8) 0%, rgba(0, 71, 255, .8) 100%);
+		background-size: 266px 266px, 266px 266px, 376px 376px;
+		background-position: right 286px, left top, 65px bottom;
+	}
+}

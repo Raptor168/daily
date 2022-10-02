@@ -1,0 +1,106 @@
+.header {
+	background: rgba(255, 255, 255, 0.16);
+	backdrop-filter: blur(80px);
+	position: relative;
+	z-index: 1;
+	&_grid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 64px;
+	}
+	.nav {
+		flex-grow: 1;
+
+		&_list {
+			margin: 0 0 0 40px;
+			padding: 0;
+			list-style: none;
+			display: flex;
+		}
+		&_item {
+			margin-right: 24px;
+		}
+		&_link {
+			font: 700 14px/150% "Nominee", sans-serif;
+			color: #fff;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				border-radius: 4px;
+				background-color: #fff;
+				bottom: -6px;
+				left: 0;
+				transform-origin: left;
+				transform: scaleX(0);
+				transition: transform .3s ease-in-out;
+			}
+			&:hover::before {
+				transform-origin: left;
+				transform: scaleX(1);
+			}
+		}
+	}
+	&_contacts {
+		flex-shrink: 0;
+	}
+	&_phone {
+		font: 700 14px/150% "Nominee", sans-serif;
+		letter-spacing: 2%;
+		color: #fff;
+		&--icon {
+			fill: #fff;
+			width: 14px;
+			height: 14px;
+			margin: 0 8px -2px 0;
+		}
+	}
+	.burger {
+		display: flex;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		top: 39px;
+		right: 9px;
+		align-items: center;
+		justify-content: center;
+
+
+		@media screen and (min-width: 1024px) {
+			// display: none;
+		}
+
+		&-icon {
+				width: 16px;
+				height: 2px;
+				background-color: #fff;
+				position: relative;
+				border-radius: 10px;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 2px;
+				background-color: #fff;
+				border-radius: 10px;
+				top: 6px;
+			}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 2px;
+				background-color: #fff;
+				border-radius: 10px;
+				top: -6px;
+			}
+		}
+	}
+}
